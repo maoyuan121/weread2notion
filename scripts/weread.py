@@ -407,7 +407,9 @@ if __name__ == "__main__":
     session = requests.Session()
     session.cookies = parse_cookie_string(weread_cookie)
     client = Client(auth=notion_token, log_level=logging.ERROR)
+    print('1')
     session.get(WEREAD_URL)
+    print('2')
     latest_sort = get_sort()
     books = get_notebooklist()
     if books != None:
