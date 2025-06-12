@@ -411,7 +411,9 @@ if __name__ == "__main__":
     session.get(WEREAD_URL)
     print('2')
     latest_sort = get_sort()
+    print('3')
     books = get_notebooklist()
+    print('4')
     if books != None:
         for index, book in enumerate(books):
             sort = book["sort"]
